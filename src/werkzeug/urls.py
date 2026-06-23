@@ -94,10 +94,10 @@ def uri_to_iri(uri: str) -> str:
 
     if ":" in netloc:
         netloc = f"[{netloc}]"
-        
+
     if parts.port:
         netloc = f"{netloc}:{parts.port}"
-        
+
     if parts.username is not None:
         auth = _unquote_user(parts.username)
 
